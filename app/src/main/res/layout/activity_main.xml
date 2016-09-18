@@ -16,17 +16,16 @@
         android:layout_alignParentStart="true">
 
         <ImageButton
-            android:layout_width="105dp"
-            android:layout_height="105dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:id="@+id/imageButton"
             android:src="@drawable/lizard"
             android:maxWidth="@android:dimen/app_icon_size"
             android:minHeight="@android:dimen/app_icon_size"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:onClick="
-            Toast toast = Toast.makeText(this, “Lizard was clicked”, Toast.LENGTH_SHORT);
-toast.show();"/>
+            android:onClick="lizardClicker"
+            android:background="@null" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -35,8 +34,10 @@ toast.show();"/>
             android:src="@drawable/rock"
             android:maxWidth="@android:dimen/app_icon_size"
             android:minHeight="@android:dimen/app_icon_size"
-            android:layout_alignTop="@+id/imageButton3"
-            android:layout_alignParentStart="true" />
+            android:background="@null"
+            android:onClick="rockClicker"
+            android:layout_below="@+id/imageButton"
+            android:layout_toStartOf="@+id/imageButton3" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -46,7 +47,9 @@ toast.show();"/>
             android:maxWidth="@android:dimen/app_icon_size"
             android:minHeight="@android:dimen/app_icon_size"
             android:layout_below="@+id/imageButton"
-            android:layout_alignStart="@+id/imageButton" />
+            android:layout_alignStart="@+id/imageButton"
+            android:background="@null"
+            android:onClick="paperClicker" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -55,8 +58,10 @@ toast.show();"/>
             android:src="@drawable/scissors"
             android:maxWidth="@android:dimen/app_icon_size"
             android:minHeight="@android:dimen/app_icon_size"
+            android:background="@null"
+            android:onClick="scissorsClicker"
             android:layout_below="@+id/imageButton"
-            android:layout_alignEnd="@+id/imageButton8" />
+            android:layout_toEndOf="@+id/imageButton" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -66,7 +71,9 @@ toast.show();"/>
             android:maxWidth="@android:dimen/app_icon_size"
             android:minHeight="@android:dimen/app_icon_size"
             android:layout_below="@+id/imageButton2"
-            android:layout_alignEnd="@+id/imageButton2" />
+            android:layout_alignEnd="@+id/imageButton2" 
+            android:onClick="lizardClicker"
+            android:background="@null" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -76,7 +83,9 @@ toast.show();"/>
             android:maxWidth="@android:dimen/app_icon_size"
             android:minHeight="@android:dimen/app_icon_size"
             android:layout_below="@+id/imageButton2"
-            android:layout_alignStart="@+id/imageButton3" />
+            android:layout_alignStart="@+id/imageButton3"
+            android:background="@null"
+            android:onClick="rockClicker" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -86,7 +95,9 @@ toast.show();"/>
             android:maxWidth="@android:dimen/app_icon_size"
             android:minHeight="@android:dimen/app_icon_size"
             android:layout_below="@+id/imageButton6"
-            android:layout_alignStart="@+id/imageButton6" />
+            android:layout_alignStart="@+id/imageButton6"
+            android:background="@null"
+            android:onClick="paperClicker" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -95,8 +106,10 @@ toast.show();"/>
             android:src="@drawable/rock"
             android:maxWidth="@android:dimen/app_icon_size"
             android:minHeight="@android:dimen/app_icon_size"
-            android:layout_alignTop="@+id/imageButton7"
-            android:layout_alignParentEnd="true" />
+            android:background="@null"
+            android:onClick="rockClicker"
+            android:layout_below="@+id/imageButton6"
+            android:layout_toEndOf="@+id/imageButton6" />
 
         <ImageButton
             android:layout_width="wrap_content"
@@ -106,7 +119,9 @@ toast.show();"/>
             android:maxWidth="@android:dimen/app_icon_size"
             android:minHeight="@android:dimen/app_icon_size"
             android:layout_below="@+id/imageButton7"
-            android:layout_alignStart="@+id/imageButton7" />
+            android:layout_alignStart="@+id/imageButton7"
+            android:background="@null"
+            android:onClick="spockClicker" />
     </RelativeLayout>
 
 </RelativeLayout>
