@@ -21,6 +21,7 @@
             android:id="@+id/imageButton"
             android:src="@drawable/lizard"
             android:maxWidth="@android:dimen/app_icon_size"
+
             android:minHeight="@android:dimen/app_icon_size"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
